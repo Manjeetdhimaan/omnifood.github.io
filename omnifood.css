@@ -1,3 +1,5 @@
+
+
 /*------------------------------ */
 /* BASIC SETUP */
 /*------------orange color : #e67e22 ------------------ */
@@ -239,7 +241,7 @@ width: 100%;
 .meal-photo img{
     opacity: 0.7;
     width: 100%;
-    height: 240px;
+    height: auto;
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.5s;
 
@@ -286,6 +288,7 @@ margin-top: 30px;
     color: #e67e22;
     margin-right: 30px;
     float: left;
+    
 }
 .btn-app:link,
 .btn-app:visited{
@@ -480,79 +483,3 @@ background-color: rgb(36, 36, 36);
    color: rgb(235, 235, 235);
 }
 
-
-
-
-/*----------------------------------------------------------*/
-/*----------------------QUERY FILE -------------------------*/
-/*----------------------------------------------------------*/
-
-
-
-/* big tablet to 1200px (widths smaller than the 1140px row)*/
-@media only screen and (max-width:1200px){
-    .hero-text-box{
-        width: 100%;
-        padding: 0 2%;
-    }
-    .row{
-        padding: 0 2%;
-    }
-}
-
-/* small tablet to big tablet: from 768px to 1023 */
-@media only screen and (max-width:1023px){
-    body{ font-size: 18px;}
-    section{
-        padding: 60px 0;
-        margin-right: 0%;
-    }
-    .long-copy{
-        width: 90%;
-        margin-left: 5%;
-    }
-    .steps-box:first-child{margin-top:40px;}
-    .steps-box{margin-top: 10px;}
-    .steps-box:last-child{margin-top: -10px;}
-    .work-steps{margin-bottom: 10px;}
-    .work-steps:last-of-type{margin-bottom: 60px;}
-    .app-screen{width: 50%;}
-    .icon-small{width: 12px;
-    margin-right:2px;}
-    .city-feature{font-size: 90%;}
-    .plan-box{width: 100%;
-    margin-left: 0%;}
-    .price-plan{
-        font-size: 100%;
-        margin-bottom: 1px ;
-        font-weight: 300;
-    }
-
-    .price-plan span{
-        font-size: 80%;
-    }
-    .hero-text-box{
-        font-size: 90%;
-        position: absolute;
-        width: 90%;
-        transform: translate(-45%,-50%);
-    } 
-     .section-features .box{
-        font-size: 100%;
-        width: 100%;
-    }
-}
-
-
-
-/* small phones to small tablet: from 481px to 767 */
-@media only screen and (max-width:767px){
-body{font-size: 16px;}
-}
-
-
-
-/* small phones: from 0 to 40px */
-@media only screen and (max-width:480px){
-    
-}
