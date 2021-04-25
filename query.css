@@ -18,6 +18,7 @@
     section{
         padding: 60px 0;
         margin-right: 0;
+       
     }
     .long-copy{
         width: 90%;
@@ -37,11 +38,26 @@
     .price-plan{
         font-size: 100%;
         margin-bottom: 1px ;
-        font-weight: 100;
+        font-weight: 300;
+    }
+    .price-plan span{
+        font-size: 80%;
+    }
+    .hero-text-box{
+        font-size: 90%;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-45%,-50%);
+    } 
+     .section-features .box{
+        font-size: 100%;
+        width: 100%;
     }
 }
 
-
+/*----------------query----------------*/
 
 
 /* small phones to small tablet: from 481px to 767 */

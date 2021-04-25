@@ -7,12 +7,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html ,body{
     color: #555;
     font-family:'Lato',Arial, sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
     }
     .clearfix{zoom: 1;}
     .clearfix::after{
@@ -499,15 +500,12 @@ background-color: rgb(36, 36, 36);
     }
 }
 
-
-
-
 /* small tablet to big tablet: from 768px to 1023 */
 @media only screen and (max-width:1023px){
     body{ font-size: 18px;}
     section{
         padding: 60px 0;
-        margin-right: 0;
+        margin-right: 0%;
     }
     .long-copy{
         width: 90%;
@@ -529,32 +527,27 @@ background-color: rgb(36, 36, 36);
         margin-bottom: 1px ;
         font-weight: 300;
     }
+
     .price-plan span{
         font-size: 80%;
     }
     .hero-text-box{
         font-size: 90%;
         position: absolute;
-        width: 100%;
-        top: 50%;
-        left: 50%;
+        width: 90%;
         transform: translate(-45%,-50%);
     } 
      .section-features .box{
         font-size: 100%;
         width: 100%;
-        word-spacing: 1px;
-        padding-right: 3%;
-    
     }
 }
 
-/*----------------query----------------*/
 
 
 /* small phones to small tablet: from 481px to 767 */
 @media only screen and (max-width:767px){
-
+body{font-size: 16px;}
 }
 
 
