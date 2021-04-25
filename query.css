@@ -17,6 +17,7 @@
     body{ font-size: 18px;}
     section{
         padding: 60px 0;
+        margin-right: 0;
     }
     .long-copy{
         width: 90%;
@@ -37,7 +38,6 @@
         font-size: 100%;
         margin-bottom: 1px ;
         font-weight: 100;
-
     }
 }
 
