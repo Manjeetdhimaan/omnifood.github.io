@@ -77,11 +77,43 @@ h1{
 h2{
     font-size: 150%;
 }
+ 
+.mobile-nav-icon{
+    display: inline-block;
+}
+.main-nav{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.main-nav li{
+    display: block;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    display: block;
+    border: none;
+    padding: 10px 0;
+    font-size: 120%;
+}
+
+.sticky  .main-nav{
+    margin-top: 8px ;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{padding: 10px 0px;}
+.sticky .mobile-nav-icon {margin-top: 10px;}
+.sticky .mobile-nav-icon i {color: #555;}
+
+
 
 .work-steps{margin-bottom: 20px;}
 .work-steps:last-of-type{margin-bottom: 60px;}
 .steps-box:first-child{width: 65%; }
 .app-screen{width: 40%;}
+.steps-box:first-child{margin-top:10px;}
 .work-steps div{
     height: 40px;
     width: 40px;
@@ -160,14 +192,14 @@ input[type=checkbox]{
     }
 
     .btn:link,
-.btn:visited,
-input[type=submit]{
-    padding: 6px 22px;
-    margin-bottom: 10px;
-}
-.btn-app img{
-    height: 30px;
-    width: auto;
-    margin: 0 3px;
-}
+    .btn:visited,
+    input[type=submit]{
+        padding: 6px 22px;
+        margin-bottom: 10px;
+    }
+    .btn-app img{
+        height: 30px;
+        width: auto;
+        margin: 0 3px;
+    }
 }

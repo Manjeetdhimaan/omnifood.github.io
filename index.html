@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="omni images/icons/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="grid.css">
     <link rel="stylesheet" type="text/css" href="query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,21 +19,23 @@
         <nav>
             <div class="row">
                 <img src="omni images/logo-white.png" alt="omnifood logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our Cities</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                <img src="omni images/logo.png" alt="omnifood logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food Delivery</a></li>
+                    <li><a href="#work-section">How it works</a></li>
+                    <li><a href="#city-section">Our Cities</a></li>
+                    <li><a href="#signUp-section">Sign Up</a></li>
                 </ul>
+                <a class= "mobile-nav-icon js--nav-icon"><i class = "ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I'm Hungry</a>
-            <a class="btn btn-ghost" href="#">show me more</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I'm Hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">show me more</a>
         </div>
     </header>
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food </h2>
             <p class="long-copy">
@@ -40,7 +43,7 @@
                 No time for cooking. So let us take care of that, we're really good at it, we promise!
             </p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="ion-ios-infinite-outline icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -116,13 +119,13 @@
             </li>
         </ul>
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="work-section">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="omni images/iphone.jpg" alt="omnifood app on iphone" class="app-screen">
+                <img src="omni images/iphone.jpg" alt="omnifood app on iphone" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="work-steps">
@@ -148,7 +151,7 @@
             </div>
         </div>
     </section>
-    <section class="section-cities">
+    <section class="section-cities" id="city-section">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
@@ -247,7 +250,7 @@
             </div>
         </div>
     </section>
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="signUp-section">
         <div class="row">
             <h2>START EATING HEALTHY TODAY</h2>
             <div class="row">
@@ -403,6 +406,10 @@
             <p class="footer-text">copyright © 2015 by Omnifood. All rights reserved.</p>
         </div>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="jQuery/jquery.waypoints.min.js" ></script>
+    <script src = "jQuery/script.js"></script>
 </body>
 
 </html>
