@@ -38,7 +38,7 @@ $(function(){
 });
 
 $('.js--wp-1').waypoint(function(direction){
-  $('.js--wp-1').addClass('animated animate__swing')
+  $('.js--wp-1').addClass('animated animate__fadeInUp')
 
 },{
   offset:'50%'
@@ -50,31 +50,36 @@ $('.js--wp-2').waypoint(function(direction){
   offset:'50%'
  });
 
-});
+
 
 
 
 /*-----------mobile navigtion------- */
 $('.js--nav-icon').click(function(){
-  var nav =$('.js--main-nav');
-  var icon =$('.js--nav-icon');
-  nav.slideToggle(200);
+  var nav = $('.js--main-nav')
+  var icon = $('.js--nav-icon i')
+  nav.slideToggle(200)
   if(icon.hasClass('ion-navicon-round')){
-    icon.addClass('ion-close-round');
-    icon.removeClass('ion-navicon-round');
-  
+    icon.addClass('ion-close-round')
+    icon.removeClass('ion-navicon-round')
 }else{
-  icon.addClass('ion-navicon-round');
-  icon.removeClass('ion-close-round');
+  icon.addClass('ion-navicon-round')
+  icon.removeClass('ion-close-round')
 }
 });
-    
-/*-----------maps------- */
 
-new GMaps({
+var map = new GMaps({
   div: '.map',
-  lat: -12.043333,
-  lng: -77.028333
+  lat: 38.7437396,
+  lng: -9.2302438,
+  zoom:12
 });
-
-
+map.addMarker({
+  lat: 38.7437396,
+  lng: -9.2302438,
+  title: 'Lisbon',
+  infoWindow: {
+    content: '<p>Our Lisbon HQ</p>'
+  }
+});
+});
